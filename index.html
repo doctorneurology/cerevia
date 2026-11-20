@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cerevia — Literatür arama</title>
+<meta name="description" content="PubMed, Europe PMC, OpenAlex ve diğer kaynaklarda aynı anda arayın; makaleleri kaydedin, açık erişim PDF'lerine ulaşın, atıf ve kaynakça oluşturun.">
+<meta name="theme-color" content="#4f46e5">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Cerevia">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./" aria-label="Cerevia ana sayfa"><img src="icons/logo.png" alt="" width="32" height="32"><span>Cerevia</span></a>
+  <nav class="tabs" aria-label="Bölümler">
+    <button data-view="search">Ara</button>
+    <button data-view="discover">Keşfet</button>
+    <button data-view="library">Kütüphanem <span class="count" data-count></span></button>
+    <button data-view="bib">Kaynakça</button>
+  </nav>
+</header>
+<main id="main" tabindex="-1"><noscript>Cerevia'yı kullanmak için JavaScript'i açın.</noscript></main>
+<nav class="bottom" aria-label="Bölümler">
+  <button data-view="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Ara</button>
+  <button data-view="discover"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg>Keşfet</button>
+  <button data-view="library"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2Zm0 0a2 2 0 0 1 2-2h12"/></svg>Kütüphanem <span class="count" data-count></span></button>
+  <button data-view="bib"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg>Kaynakça</button>
+</nav>
+<div id="toasts" aria-live="polite"></div>
+<footer class="foot">Veriler PubMed, Europe PMC, OpenAlex, Crossref, DOAJ, Google Books ve Open Library'den doğrudan alınır. Kütüphaneniz yalnızca bu tarayıcıda saklanır. Atıfları kaynağıyla doğrulayın.</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
